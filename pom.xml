@@ -4,13 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.wick</groupId>
+    <groupId>com.wick.gulimall</groupId>
     <artifactId>guli-mall</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>聚和服务</description>
+    <packaging>pom</packaging>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
+    <modules>
+        <module>gulimall-product</module>
+        <module>gulimall-order</module>
+        <module>gulimall-ware</module>
+        <module>gulimall-coupon</module>
+        <module>gulimall-member</module>
+    </modules>
 
 </project>
