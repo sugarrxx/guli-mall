@@ -7,16 +7,16 @@ spring:
         server-addr: 127.0.0.1:8848
     gateway:
       routes:
-        # http://localhost:88/hello?url=baidu
-        #        - id: test_route
-        #          uri: https://www.jd.com
-        #          predicates:
-        #            - Query=url,jd
+        # http://localhost:88/hello?url=jd
+#        - id: test_route
+#          uri: https://www.jd.com
+#          predicates:
+#            - Query=url,jd
         # http://localhost:88/hello?url=qq -> www.qq.com/hello
-        #        - id: qq_route
-        #          uri: https://www.qq.com
-        #          predicates:
-        #            - Query=url,qq
+#        - id: qq_route
+#          uri: https://www.qq.com
+#          predicates:
+#            - Query=url,qq
 
         - id: product_route
           uri: lb://gulimall-product
